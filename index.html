@@ -15,11 +15,9 @@
 <body>
     <!-- Header design -->
     <header class="header">
-        <a href="#" class="logo">Rohit.</a>
+        <a href="#" class="logo">Rohit.<span class="animate" style="--i:1;"></span></a>
 
-        <div class="bx-bx-menu" id="menu-icon">
-            <i class='bx bx-menu'></i>
-        </div>
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -27,27 +25,32 @@
             <a href="#education" class="">Education</a>
             <a href="#skills" class="">Skills</a>
             <a href="#contact" class="">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
         </nav> 
     </header>
 
     <!-- home section design -->
 
     <!-- section.home#home -> one line command for the below line -->
-    <section class="home" id="home">
+    <section class="home show-animate" id="home">
         <div class="home-content">
-            <h1>Hi, I'm <span>Rohit Kumar</span></h1>
-
-            <div class="text-animate"> 
+            <h1>Hi, I'm <span>Rohit Kumar</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
                 <h3>Frontend Developer</h3>
+                <span class="animate" style="--i:3;"></span> 
             </div>
 
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo at quibusdam sed autem vel iure? Aspernatur earum voluptatibus provident praesentium quae dicta in distinctio est illum, laudantium obcaecati ullam accusantium eveniet quasi accusamus voluptatem dolore. Unde dolor illum assumenda suscipit!
+                <span class="animate" style="--i:3;"></span>
             </p>
 
             <div class="btn-box">
                 <a href="#" class="btn">Hire Me</a>
                 <a href="#" class="btn">Let's Talk</a>
+                <span class="animate" style="--i:3;"></span>
             </div>
         </div>
         
@@ -57,6 +60,7 @@
             <a href="#"><i class='bx bxl-twitter' ></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
             <a href="#"><i class='bx bxl-facebook'></i></a>
+            <!-- <span class="animate" style="--i:3;"></span>  -->
         </div>
 
         <div class="home-imgHover"></div>
