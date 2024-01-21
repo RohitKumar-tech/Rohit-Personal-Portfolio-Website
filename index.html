@@ -49,7 +49,7 @@
 
             <div class="btn-box">
                 <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
+                <a href="#contact" class="btn">Let's Talk</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -235,16 +235,17 @@
 
     <!-- Contact section design -->
     <section class="contact" id="contact">
+
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
+        <form action="connect.php" method="post">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" name="FullName" required/>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Email Address" name="EmailAddress" required/>
                     <span class="focus"></span>
                 </div>
 
@@ -253,11 +254,11 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile number" required>
+                    <input type="number" placeholder="Mobile number" name="Mobilenumber" required/>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" name="EmailSubject" required/>
                     <span class="focus"></span>
                 </div>
 
@@ -265,7 +266,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea id="" cols="30" rows="10" placeholder="Your Message" name="YourMessage" required></textarea>
                 <span class="focus"></span>
 
                 <span class="animate scroll" style="--i:7;"></span>
