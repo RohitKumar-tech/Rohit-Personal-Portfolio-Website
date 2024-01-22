@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -152,6 +154,7 @@ section {
 }
 
 .home-content p {
+    /* font-family: cursive; */
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
@@ -557,22 +560,54 @@ span {
     width: 75%;
 }
 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+    width: 50%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
+    width: 70%;
+}
+
 /* this is the professional skill bar configuration */
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
+    width: 80%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 67%;
+    width: 60%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 85%;
+    width: 50%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 60%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 70%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
+    width: 55%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
+    width: 20%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(8) .bar span {
+    width: 40%;
 }
 
 .contact {

@@ -6,7 +6,7 @@
     $YourMessage = $_POST['YourMessage'];
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'Rohitt');
+    $conn = new mysqli('localhost', 'u115385445_root', 'o!:wRNK7E6', 'u115385445_Rohitt');
     if ($conn->connect_error) {
         echo "$conn->connect_error";
         die("Connection Failed : " . $conn->connect_error);
@@ -23,10 +23,13 @@
             die("Execute failed: " . $stmt->error);
         }
 
-        echo $execval ? "Registration successfully..." : "Registration failed.";
+        // Making alert
+        echo '<script>alert("Thanks")</script>'; 
 
         // Close the statement and connection
         $stmt->close();
         $conn->close();
+
+        include "index.html";
     }
 ?>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* font-family: 'Cookie', cursive; */
+
+/* Main Body */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.about {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    
+}
+
+.heading {
+    position: relative;
+    /* text-decoration: underline solid .50rem var(--main-color); */
+    margin-top: 4rem;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+
+/* About content */
+
+.about-column .about-box .about-img {
+    top: 6rem;
+    position: relative;
+    left: 15%;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-column .about-box .about-img .content img {
+    width: 160%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.about .about-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.about-row .about-column {
+    flex: 1 1 10rem;
+}
+
+.about-box .about-img {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.about .about-column .content h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about .about-column .content p {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: .5rem;
+}
+
+.about .about-column .content .desc {
+    font-size: 1.8rem;
+}
+
+.about .about-column .content .desc a {
+    color: var(--text-color);
+}
+
+/* Achievement */
+
+.achievement h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    font-size: 5rem;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px ;
+    padding-bottom: 8rem;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    height: 50%;
+    clear: both;
+    display: table;
+  }
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    display: flex;
+    text-align: left;
+    left: 0;
+    bottom: 0;
+    margin-top: 100px;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+/* BREAKPOINTS */
+@media(max-width : 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header {
+        background-color: var(--bg-color);
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 892px) {
+    .about-column .about-box .about-img .content img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 50%;
+    }
+    .column {
+        width: 100%;
+        padding-bottom: 7rem;
+      }
+}
+
+@media (max-width: 475px){
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .heading{
+        position: relative;
+        margin-top: 2rem;
+        font-size: 9rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-column .about-box .about-img .content img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        max-width: 100%;
+        height: auto;
+    }
+    .about .about-column .content h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer  {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .column {
+        width: 100%;
+        padding-bottom: 7rem;
+      }
+}
