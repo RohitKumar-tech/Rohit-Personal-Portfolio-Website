@@ -31,5 +31,14 @@
         $conn->close();
 
         include "index.html";
+
+        // Construct email message
+        $to = 'rohitkumar620200@gmail.com';
+        $subject = $EmailSubject;
+        $body = "Name: $FullName\nEmail: $EmailAddress\nMessage: $YourMessage";
+
+        // Send email
+        $mailSent = mail($to, $subject, $body);
+
     }
 ?>
