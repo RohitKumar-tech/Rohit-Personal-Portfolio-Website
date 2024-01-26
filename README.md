@@ -1,6 +1,10 @@
-**Portfolio Website**
+## Portfolio Website
 
 Welcome to my personal portfolio website! Here, I showcase my skills, projects, and contributions to the tech community. Below, you'll find more detailed information about this website and its components:
+
+**Screenshot** <br> <br>
+<img src="./Screenshot/Home_Page.png" > <br> <br> 
+<img src="./Screenshot/About.png" >
 
 **Framework and Technologies Used:**
 - **Frontend:** HTML, CSS, JavaScript
